@@ -26,7 +26,6 @@ def register():
 def unregister():
     for cls in classes:
         bpy.utils.unregister_class(cls)
-        del bpy.types.Scene.my_tools
         
 if __name__ == "__main__":
     register() 
